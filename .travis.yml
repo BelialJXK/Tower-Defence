@@ -1,2 +1,2 @@
 language: csharp
-
+solution: ./Tower Defence/Tower Defence.sln
