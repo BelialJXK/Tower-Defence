@@ -64,26 +64,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonPause.cs" />
     <Compile Include="Assets\Counter.cs" />
     <Compile Include="Assets\CounterDown.cs" />
     <Compile Include="Assets\Game_map_1.cs" />
+    <Compile Include="Assets\GameManage.cs" />
     <Compile Include="Assets\Introduction_menu.cs" />
     <Compile Include="Assets\Map2.cs" />
     <Compile Include="Assets\Start_menu.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -287,13 +289,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/macro/macro/AllCode/MyGitHub/Tower Defence/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
