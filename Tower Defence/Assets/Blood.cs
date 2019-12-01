@@ -22,7 +22,7 @@ public class Blood : MonoBehaviour
     {
     }
 
-    private void updateBlood(int damage) {
+    public void updateBlood(int damage) {
         hp = hp + damage;
         HPSlider.value = hp/HP;
     }
