@@ -15,9 +15,11 @@ public class GameManage : MonoBehaviour
 
     void Start()
     {
-        selectTower = null;
+        //selectTower = null;
         selectPanel = transform.Find("SelectCanvas").gameObject; // 捕捉名为SelectCanvas的画布 第一个小菜单
         //nextSelectPanel = transform.Find("NextSelectPanel").gameObject; //第二个小菜单
+
+
         firstPanel = selectPanel.transform.GetChild(0).gameObject;
         nextSelectPanel = selectPanel.transform.GetChild(1).gameObject;
 
@@ -40,19 +42,31 @@ public class GameManage : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(ray, out hit, 50) && EventSystem.current.IsPointerOverGameObject() ==false)
         {                                        //↑并且射线没有点击到UI才执行
-            if(hit.transform.tag =="TowerBase") //点击带有TowerBase的砖块
+            
+            if (hit.transform.tag =="TowerBase") //点击带有TowerBase的砖块
             {
+                
+
                 ShowSelectPanel(hit.transform);
+               
+
                 basePos = hit.transform; //把地基的局部变量传出来
+                
+
             }
         }
     }
 
     private void ShowSelectPanel(Transform pos)
     {
+        
+
         selectPanel.transform.SetParent(pos, false);
+                 
         selectPanel.transform.localPosition = new Vector3(0, 0, 0);//小菜单位置
+
         selectPanel.SetActive(true);
+
     }
 
     public void SelecttowerOne(bool isOn) //选择第一个塔 下以此类推
@@ -123,7 +137,7 @@ public class GameManage : MonoBehaviour
             GameObject temperTower = Instantiate(selectTower);
             temperTower.transform.SetParent(basePos, false);
             temperTower.transform.localPosition = new Vector3(0, 0, 0);
-            temperTower.transform.localScale = new Vector3(1, 0.8F, 1); // 定义尺寸
+            //temperTower.transform.localScale = new Vector3(1, 0.8F, 1); // 定义尺寸
                                                                         //在此处加 炮塔攻击脚本
             InitUI();
 

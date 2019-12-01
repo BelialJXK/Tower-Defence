@@ -15,4 +15,10 @@ public class Save : MonoBehaviour
     {
         
     }
+
+    public void save() { }
+
+    public void load(int a) {
+
+    }
 }
