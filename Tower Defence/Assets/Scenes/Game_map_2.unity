@@ -359,7 +359,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Time
+  m_Text: 30
 --- !u!222 &84471510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6723,6 +6723,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400561345}
   m_CullTransparentMesh: 0
+--- !u!1001 &1426933302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.173047
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972361, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210757513627972366, guid: d9f34eb6674fe8f4bb5d8e431141a38b,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d9f34eb6674fe8f4bb5d8e431141a38b, type: 3}
 --- !u!1001 &1468395909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6823,6 +6892,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1058725009862398, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1064138168224694, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -6867,9 +6940,17 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1107166329943424, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1109982817671816, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109982817671816, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
       objectReference: {fileID: 0}
     - target: {fileID: 1125174865692776, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6890,6 +6971,10 @@ PrefabInstance:
     - target: {fileID: 1147405406516326, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147405406516326, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
       objectReference: {fileID: 0}
     - target: {fileID: 1151317849153534, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_IsActive
@@ -6943,6 +7028,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1207450773837958, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1215951662160326, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -6983,6 +7072,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1322560877499100, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1335524005624786, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -7010,6 +7103,10 @@ PrefabInstance:
     - target: {fileID: 1374945012813912, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374945012813912, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
       objectReference: {fileID: 0}
     - target: {fileID: 1381292551493988, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7091,6 +7188,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1506511748091222, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1520063554052512, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -7123,6 +7224,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1564627088916658, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1565276320635818, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -7154,6 +7259,10 @@ PrefabInstance:
     - target: {fileID: 1636765631558252, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636765631558252, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
       objectReference: {fileID: 0}
     - target: {fileID: 1649042212894912, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7211,6 +7320,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1741723983691426, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1752162577824304, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -7227,9 +7340,17 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1812882338665174, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1833521300744722, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833521300744722, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
       objectReference: {fileID: 0}
     - target: {fileID: 1834661432282478, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7307,6 +7428,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1931354940516410, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
+      objectReference: {fileID: 0}
     - target: {fileID: 1932800724773470, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -7322,6 +7447,10 @@ PrefabInstance:
     - target: {fileID: 1965477763061574, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965477763061574, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
+      propertyPath: m_TagString
+      value: TowerBase
       objectReference: {fileID: 0}
     - target: {fileID: 1979438713012700, guid: ad04deff4af0fa34bb5e98962d058a6d, type: 3}
       propertyPath: m_IsActive
