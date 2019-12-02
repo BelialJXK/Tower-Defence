@@ -69,9 +69,9 @@
     <Compile Include="Assets\CounterDown.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Game_map_1.cs" />
+    <Compile Include="Assets\Game_map_2.cs" />
     <Compile Include="Assets\GameManage.cs" />
     <Compile Include="Assets\Introduction_menu.cs" />
-    <Compile Include="Assets\Map2.cs" />
     <Compile Include="Assets\Move.cs" />
     <Compile Include="Assets\Save.cs" />
     <Compile Include="Assets\Start_menu.cs" />
