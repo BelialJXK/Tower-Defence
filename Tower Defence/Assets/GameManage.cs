@@ -133,16 +133,26 @@ public class GameManage : MonoBehaviour
     {
         if (selectTower != null)
         {
-            Debug.Log("Build");
-            //GameObject temperTower = Instantiate(selectTower,transform.position,Quaternion.identity) as GameObject;
-            GameObject temperTower = Instantiate(selectTower);
-            temperTower.transform.SetParent(basePos, false);
-            temperTower.transform.localPosition = new Vector3(0, 0, 0);
-            temperTower.transform.localScale = new Vector3(0.7F, 0.5F, 0.7F); // 定义尺寸
-            //temperTower.AddComponent<Tower_Attake>();     //在此处加 炮塔攻击脚本
-            //temperTower.AddComponent<TowerContribute>();  //塔属性脚本
-            InitUI();
-
+            if (basePos.childCount == 0)
+            {
+                Debug.Log("Build");
+                //GameObject temperTower = Instantiate(selectTower,transform.position,Quaternion.identity) as GameObject;
+                GameObject temperTower = Instantiate(selectTower);
+                temperTower.transform.SetParent(basePos, false);
+                temperTower.transform.localPosition = new Vector3(0, 0, 0);
+                temperTower.transform.localScale = new Vector3(0.7F, 0.5F, 0.7F); // 定义尺寸
+                temperTower.AddComponent<Tower_Attake>();     //在此处加 炮塔攻击脚本
+                temperTower.AddComponent<TowerContribute>();  //塔属性脚本
+                InitUI();
+            }
+            else
+            {
+                Debug.Log("此处已经有塔，不能重复建造");
+            }
+        }
+        else
+        {
+            Debug.Log("没选中塔");
         }
     }
 
