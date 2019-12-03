@@ -6,13 +6,13 @@ public class TowerContribute : MonoBehaviour
 {
     //塔属性：攻击力，血量，名字，价格，升级价格，回收价格
 
-    private int HP;                 //血量
-    private int AttackAbility;      //攻击力
+    public int HP;                 //血量
+    public int AttackAbility;      //攻击力
 
-    private int BuildPrice;         //建造价格
-    private string TowerName;       //塔名字
-    private int UpgradePrice;       //升级价格
-    private int ReturnPrice;        //回收价格
+    public int BuildPrice;         //建造价格
+    public string TowerName;       //塔名字
+    public int UpgradePrice;       //升级价格
+    public int ReturnPrice;        //回收价格
 
 
     //HP;                 //血量
