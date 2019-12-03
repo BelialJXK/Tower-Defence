@@ -628,6 +628,29 @@
     <Compile Include="Packages\com.unity.analytics\DataPrivacy\DataPrivacyButton.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Stuff\JKzombie_girl\JK偧傫傃.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\JKzombie_girl\JK偧傫傃.txt" />
+    <None Include="Assets\Stuff\JKzombie_girl\JK偧傫傃.xml" />
+    <None Include="Assets\Stuff\JKzombie_girl\readme.txt" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈A1.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈A1.xml" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈A1僙僢僩.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈A1僙僢僩.xml" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈M1.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈M1.xml" />
+    <None Include="Assets\Stuff\mouse\儌僽僱僘儈偍帋偟僙僢僩.txt" />
+    <None Include="Assets\Stuff\mouse\崉懱嶒.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\mouse\崉懱嶒.xml" />
+    <None Include="Assets\Stuff\mouse\崉懱暻1.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\mouse\崉懱暻1.xml" />
+    <None Include="Assets\Stuff\pink_fish\readme.txt" />
+    <None Include="Assets\Stuff\pink_fish\僯儏僂僪僂僇僕僇.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\pink_fish\僯儏僂僪僂僇僕僇.xml" />
+    <None Include="Assets\Stuff\robot\EIU-1.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\robot\EIU-1.xml" />
+    <None Include="Assets\Stuff\robot_with_long_hair\EIU-XX-a.MMD4Mecanim.xml" />
+    <None Include="Assets\Stuff\robot_with_long_hair\EIU-XX-a.xml" />
+    <None Include="Assets\Stuff\steel_policeman\Test\Materials\ColorSpecReflexive.shader" />
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\PolygonChangeShapeWindow.uxml" />
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\SpriteEditor.uss" />
     <None Include="Packages\com.unity.2d.sprite\Editor\UI\SpriteEditor\SpriteFrameModuleInspector.uxml" />
