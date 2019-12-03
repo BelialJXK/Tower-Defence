@@ -10,7 +10,7 @@ public class CounterDown : MonoBehaviour
     public GameObject ti;
     public GameObject ni;
     public int end = 1;
-    private int TimeControl = 6; //若为public，Update函数不能调用
+    private int TimeControl = 30; //若为public，Update函数不能调用
     //public bool ClickNum = false;
 
 
