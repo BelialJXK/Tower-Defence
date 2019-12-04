@@ -31,10 +31,7 @@ public class Save : MonoBehaviour
 
         save = s + " " + DateTime.Now.ToLocalTime().ToString();
 
-        if (IfSave)
-        {
-            PlayerPrefs.SetString("Gameload", save);
-        }
+        PlayerPrefs.SetString("Gameload", save);
     }
 
     //读取存档地图
