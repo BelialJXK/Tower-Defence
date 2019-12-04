@@ -59,6 +59,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2cc471c2935c0469e41046a8485cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 50
+  AttackAbility: 10
+  BuildPrice: 10
+  TowerName: Tower1
+  UpgradePrice: 10
+  ReturnPrice: 5
 --- !u!1 &1061018822995492
 GameObject:
   m_ObjectHideFlags: 0

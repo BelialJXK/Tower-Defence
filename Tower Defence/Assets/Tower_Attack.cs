@@ -26,47 +26,53 @@ public class Tower_Attake : MonoBehaviour
 
     void Update()
     {
-        if (enemy.Count > 0)
-        {
-            if (targetObject == null)
-            {
-                //choose target
-                targetObject= SelectTarget();
-            }
-        }
-        //attack
-        if (targetObject != null)
-        {
-            LookTarget();
-            //消除怪，加金币，减怪总数
-            /*if (target.HP <= 0)
-            {   
-                Destroy(target);
-                enemy.Remove(other.gameObject);
-                gold += xxx;
-                enems -= xxx;
-            }*/
 
-        }
+        Debug.Log(enemy.Count);
+        /* if (enemy.Count > 0)
+         {
+             if (targetObject == null)
+             {
+                 //choose target
+                 targetObject= SelectTarget();
+             }
+         }
+         //attack
+         if (targetObject != null)
+         {
+             LookTarget();
+             //消除怪，加金币，减怪总数
+             if (target.HP <= 0)
+             {   
+                 Destroy(target);
+                 enemy.Remove(other.gameObject);
+                 gold += xxx;
+                 enems -= xxx;
+             }
+
+         }*/
     }
 
     //Check is monster into attack range?
-    public void CheckInto(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
+
         if (other.tag == "Enemy")
         {
+
             if (!enemy.Contains(other.gameObject))
             {
                 enemy.Add(other.gameObject);
             }
         }
+
     }
 
     //check is monster leave attack range
-    public void CheckLeave(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         if (other.tag == "Enemy")
         {
+            
             if (targetObject != null && other.name == targetObject.name)
             {
                     targetObject = null;
@@ -75,6 +81,7 @@ public class Tower_Attake : MonoBehaviour
             {              
                 enemy.Remove(other.gameObject);
             }
+            
         }
     }
 

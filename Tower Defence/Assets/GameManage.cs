@@ -9,6 +9,7 @@ public class GameManage : MonoBehaviour
     // Start is called before the first frame update
     private GameObject nextSelectPanel;     //小菜单2 Build Sell Cancel
     private GameObject firstPanel;          //获取小菜单1
+    private GameObject CloseAllNextPanel;   //专门取消 小菜单2
     public GameObject[] towers;             //给GameManage中添加塔的数组以放置塔模型
     private GameObject selectTower;         //即将要创建的塔
     private Transform basePos;              //地基位置，塔的创建位置
@@ -22,6 +23,7 @@ public class GameManage : MonoBehaviour
 
         firstPanel = selectPanel.transform.GetChild(0).gameObject;
         nextSelectPanel = selectPanel.transform.GetChild(1).gameObject;
+        CloseAllNextPanel = selectPanel.transform.GetChild(2).gameObject;
 
         Debug.Log(selectPanel);
     }
@@ -51,8 +53,14 @@ public class GameManage : MonoBehaviour
                
 
                 basePos = hit.transform; //把地基的局部变量传出来
-                
 
+                if (basePos.childCount != 0)
+                {
+                    Debug.Log("直接显示第二个菜单");
+                    firstPanel.SetActive(false);
+                    nextSelectPanel.SetActive(false);
+                    CloseAllNextPanel.SetActive(true);
+                }
             }
         }
     }
@@ -66,6 +74,8 @@ public class GameManage : MonoBehaviour
         selectPanel.transform.localPosition = new Vector3(0, 0, 0);//小菜单位置
 
         selectPanel.SetActive(true);
+
+        
 
     }
 
@@ -128,21 +138,39 @@ public class GameManage : MonoBehaviour
 
     }
 
-    
+    public void CloseAllNext()     //第二次 全部 关闭
+    {
+        selectPanel.SetActive(false);
+        nextSelectPanel.SetActive(false);//防止第二层窗口开着
+        firstPanel.SetActive(true);
+
+    }
+
+
     public void CreateTower()    //建塔
     {
         if (selectTower != null)
         {
-            Debug.Log("Build");
-            //GameObject temperTower = Instantiate(selectTower,transform.position,Quaternion.identity) as GameObject;
-            GameObject temperTower = Instantiate(selectTower);
-            temperTower.transform.SetParent(basePos, false);
-            temperTower.transform.localPosition = new Vector3(0, 0, 0);
-            temperTower.transform.localScale = new Vector3(0.7F, 0.5F, 0.7F); // 定义尺寸
-            //temperTower.AddComponent<Tower_Attake>();     //在此处加 炮塔攻击脚本
-            //temperTower.AddComponent<TowerContribute>();  //塔属性脚本
-            InitUI();
-
+            if (basePos.childCount == 0)
+            {
+                Debug.Log("Build");
+                //GameObject temperTower = Instantiate(selectTower,transform.position,Quaternion.identity) as GameObject;
+                GameObject temperTower = Instantiate(selectTower);
+                temperTower.transform.SetParent(basePos, false);
+                temperTower.transform.localPosition = new Vector3(0, 1, 0);
+                temperTower.transform.localScale = new Vector3(0.7F, 0.5F, 0.7F); // 定义尺寸
+                temperTower.AddComponent<Tower_Attake>();     //在此处加 炮塔攻击脚本
+                //temperTower.AddComponent<TowerContribute>();  //塔属性脚本
+                InitUI();
+            }
+            else
+            {
+                Debug.Log("此处已经有塔，不能重复建造");
+            }
+        }
+        else
+        {
+            Debug.Log("没选中塔");
         }
     }
 
@@ -182,12 +210,33 @@ public class GameManage : MonoBehaviour
 
     }
 
+    public void UpgradeTower()      //塔升级
+    {
+        Debug.Log("Upgrade Tower 塔升级");
+        //double OriginHP = HP;
+        //double UpgradeHP;
+        //double OriginAttackAbility = AttackAbility;
+        //double UpgradeAttackAbility;
+
+        //UpgradeHP = OriginHP * 1.2;
+        //UpgradeAttackAbility = 1.2 * AttackAbility;
+
+        //double[] a = new double[2] { UpgradeHP, UpgradeAttackAbility };
+
+
+        //bool flag = UpgradeTower((int)UpgradeHP, (int)UpgradeAttackAbility);
+        //return flag;
+    }
+
+
+
     private void InitUI()       //初始化UI
     {
         selectTower = null;
         selectPanel.SetActive(false);
         firstPanel.SetActive(true);
         nextSelectPanel.SetActive(false);
+        CloseAllNextPanel.SetActive(false);
 
     }
 
