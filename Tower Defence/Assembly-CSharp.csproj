@@ -2,18 +2,22 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{D5374558-ECB5-BED4-A112-BFCB5B355C8B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -52,9 +56,6 @@
     <UnityVersion>2019.2.14f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.2.14f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -64,15 +65,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Blood.cs" />
-    <Compile Include="Assets\BulletMove.cs" />
+    <Compile Include="Assets\BulletMove1.cs" />
+    <Compile Include="Assets\BulletMove2.cs" />
+    <Compile Include="Assets\BulletMove3.cs" />
+    <Compile Include="Assets\BulletMove4.cs" />
     <Compile Include="Assets\ButtonPause.cs" />
     <Compile Include="Assets\Counter.cs" />
     <Compile Include="Assets\CounterDown.cs" />
     <Compile Include="Assets\Enemy.cs" />
-    <Compile Include="Assets\Game_map_1.cs" />
-    <Compile Include="Assets\Game_map_2.cs" />
+    <Compile Include="Assets\Enemy_m2.cs" />
     <Compile Include="Assets\GameManage.cs" />
     <Compile Include="Assets\Introduction_menu.cs" />
+    <Compile Include="Assets\LostGame.cs" />
+    <Compile Include="Assets\Map1.cs" />
+    <Compile Include="Assets\Map2.cs" />
+    <Compile Include="Assets\Map3.cs" />
+    <Compile Include="Assets\Map4.cs" />
+    <Compile Include="Assets\Map5.cs" />
+    <Compile Include="Assets\Map6.cs" />
+    <Compile Include="Assets\Map7.cs" />
+    <Compile Include="Assets\Map8.cs" />
     <Compile Include="Assets\Move.cs" />
     <Compile Include="Assets\Save.cs" />
     <Compile Include="Assets\Start_menu.cs" />
@@ -84,8 +96,14 @@
     <Compile Include="Assets\Stuff\moveStuff\map6\map6_monsterComing.cs" />
     <Compile Include="Assets\Stuff\moveStuff\map7\map7_monsterComing.cs" />
     <Compile Include="Assets\Stuff\moveStuff\map8\map8_monsterComing.cs" />
-    <Compile Include="Assets\Tower_Attack.cs" />
+    <Compile Include="Assets\Tower_Attack1.cs" />
+    <Compile Include="Assets\Tower_Attack2.cs" />
+    <Compile Include="Assets\Tower_Attack3.cs" />
+    <Compile Include="Assets\Tower_Attack4.cs" />
+    <Compile Include="Assets\Tower_Attack5.cs" />
     <Compile Include="Assets\TowerContribute.cs" />
+    <Compile Include="Assets\TowerContribute1.cs" />
+    <Compile Include="Assets\TowerContribute2.cs" />
     <None Include="Assets\Stuff\robot_with_long_hair\EIU-XX-a.xml" />
     <None Include="Assets\Stuff\mouse\儌僽僱僘儈M1.MMD4Mecanim.xml" />
     <None Include="Assets\Stuff\mouse\儌僽僱僘儈A1.xml" />
@@ -110,61 +128,61 @@
     <None Include="Assets\Stuff\robot\EIU-1.MMD4Mecanim.xml" />
     <None Include="Assets\Stuff\JKzombie_girl\JK偧傫傃.MMD4Mecanim.xml" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -344,13 +362,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/AllCode/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/罗兰/研究生/1st/Software Technology/Tower-Defence/Tower Defence/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
