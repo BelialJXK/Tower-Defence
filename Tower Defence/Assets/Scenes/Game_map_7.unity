@@ -2509,10 +2509,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -3581,12 +3581,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a66ecc48490afd49b5300fd17c34be2, type: 3}
---- !u!224 &1550184708 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5457684366603516255, guid: 08cf0877ddaaa6b41bb68ac2e2ac55c7,
-    type: 3}
-  m_PrefabInstance: {fileID: 5457684365603440731}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1600876587
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,11 +3671,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 4
+    m_MaxSize: 45
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3801,7 +3795,7 @@ RectTransform:
   - {fileID: 113912574}
   - {fileID: 1600876588}
   - {fileID: 1979087761}
-  - {fileID: 1550184708}
+  - {fileID: 5457684365603440732}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4452,7 +4446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.0521983, g: 0.92941177, b: 0.9529412, a: 0.45490196}
+  m_Color: {r: 0.03529412, g: 0.13725491, b: 0.14117648, a: 0.45490196}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4856,6 +4850,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08cf0877ddaaa6b41bb68ac2e2ac55c7, type: 3}
+--- !u!4 &5457684365603440732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 5457684365603440731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6286000054577265191
 PrefabInstance:
   m_ObjectHideFlags: 0
